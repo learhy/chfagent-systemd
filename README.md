@@ -14,3 +14,13 @@ You will then need to modify line 13 of `/usr/bin/chfagent/sh` to set your API k
 cmd="chfagent -api_email=serviceacct_email@example.com -api_token=insertokenhere -type=proxy -host=0.0.0.0"
 ```
 
+After editing these files, you may start or stop the services thusly:
+
+```
+[root@kentik-agent system]# service chfagent stop
+[root@kentik-agent system]# service chfagent start
+[root@kentik-agent system]# service chfagent restart
+Stopping chfagent...
+Stopped
+Starting chfagent
+```

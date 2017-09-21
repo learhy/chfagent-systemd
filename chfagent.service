@@ -1,0 +1,11 @@
+[Unit]
+Description=Start/stop the Kentik Chfagent service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/chfagent.sh start
+ExecStop=/usr/bin/chfagent.sh stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
